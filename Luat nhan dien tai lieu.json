@@ -1,0 +1,145 @@
+{
+  "_huong_dan": [
+    "Luật nhận diện NHÀ PHÁT HÀNH cho TÀI LIỆU THÔNG THƯỜNG (báo cáo, nghiên cứu, sách, slide...). Không áp dụng cho văn bản pháp lý.",
+    "Tên file đích: [YYYYMM hoặc YYYYQn] [Tác giả] _[Tiêu đề]. Luật khớp sẽ GHI ĐÈ tác giả/tiêu đề do AI đọc được.",
+    "Chương trình ghép TÊN FILE GỐC + TEXT TRANG ĐẦU + TÁC GIẢ/TIÊU ĐỀ AI ĐỌC ĐƯỢC rồi so từ khóa (không phân biệt hoa thường).",
+    "- match     : PHẢI chứa TẤT CẢ các từ khóa này thì luật mới khớp",
+    "- match_any : (tùy chọn) phải chứa ÍT NHẤT 1 từ trong danh sách này (có thể dùng MỘT MÌNH, không cần match)",
+    "- author    : tác giả gán sẵn (bỏ trống hoặc xóa dòng = giữ tác giả AI đọc được)",
+    "- title     : tiêu đề gán sẵn (bỏ trống = giữ tiêu đề AI đọc được)",
+    "Từ khóa từ 4 ký tự trở xuống (dls, jll, pwc...) phải khớp NGUYÊN TỪ để tránh nhận nhầm.",
+    "Luật nào đứng trước khớp trước: đặt luật cụ thể (theo loại báo cáo) TRƯỚC luật chung (theo tổ chức).",
+    "Sửa xong file này thì khởi động lại app. File phải đặt CÙNG THƯ MỤC với file .exe."
+  ],
+  "rules": [
+    {
+      "match": [
+        "marketbeat"
+      ],
+      "match_any": [
+        "hồ chí minh",
+        "ho chi minh",
+        "hcmc"
+      ],
+      "author": "Cushman & Wakefield",
+      "title": "BC thị trường TP.HCM"
+    },
+    {
+      "match": [
+        "marketbeat"
+      ],
+      "match_any": [
+        "hà nội",
+        "ha noi",
+        "hanoi"
+      ],
+      "author": "Cushman & Wakefield",
+      "title": "BC thị trường Hà Nội"
+    },
+    {
+      "match": [
+        "marketbeat"
+      ],
+      "author": "Cushman & Wakefield",
+      "title": ""
+    },
+    {
+      "match_any": [
+        "cushman & wakefield",
+        "cushman",
+        "wakefield"
+      ],
+      "author": "Cushman & Wakefield"
+    },
+    {
+      "match_any": [
+        "dls consultant",
+        "dedicated leading services",
+        "dls"
+      ],
+      "author": "DLS"
+    },
+    {
+      "match_any": [
+        "vinaqs",
+        "vina qs"
+      ],
+      "author": "VinaQS"
+    },
+    {
+      "match_any": [
+        "savills"
+      ],
+      "author": "Savills"
+    },
+    {
+      "match_any": [
+        "world economic forum",
+        "weforum"
+      ],
+      "author": "World Economic Forum"
+    },
+    {
+      "match_any": [
+        "jones lang lasalle",
+        "jll"
+      ],
+      "author": "JLL"
+    },
+    {
+      "match_any": [
+        "cbre"
+      ],
+      "author": "CBRE"
+    },
+    {
+      "match_any": [
+        "knight frank"
+      ],
+      "author": "Knight Frank"
+    },
+    {
+      "match_any": [
+        "colliers"
+      ],
+      "author": "Colliers"
+    },
+    {
+      "match_any": [
+        "mckinsey"
+      ],
+      "author": "McKinsey & Company"
+    },
+    {
+      "match_any": [
+        "pricewaterhousecoopers",
+        "pwc"
+      ],
+      "author": "PwC"
+    },
+    {
+      "match_any": [
+        "deloitte"
+      ],
+      "author": "Deloitte"
+    },
+    {
+      "match_any": [
+        "kpmg"
+      ],
+      "author": "KPMG"
+    },
+    {
+      "match_any": [
+        "ernst & young"
+      ],
+      "author": "Ernst & Young"
+    },
+    {
+      "match_any": [
+        "nielsen"
+      ],
+      "author": "Nielsen"
+    }
+  ]
+}
